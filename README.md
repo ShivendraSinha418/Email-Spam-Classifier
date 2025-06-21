@@ -4,7 +4,7 @@ A machine learning project that classifies emails as **Spam** or **Not Spam** us
 
 ---
 
-![Banner](drowsy_driver_banner.png)
+![Banner](https://github.com/ShivendraSinha418/Email-Spam-Classifier/blob/main/emailspam.png)
 
 ---
 ## 🧠 Overview
