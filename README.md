@@ -1,40 +1,50 @@
 # 📧 Email Spam Classifier
 
-![Spam Classifier Banner](images/spam_classifier_banner.png)
+A machine learning project that classifies emails as **Spam** or **Not Spam** using **Google's Word2Vec embeddings** and a **Random Forest classifier** — implemented entirely in a Jupyter Notebook.
 
-A machine learning project to detect and classify email messages as spam or not spam using natural language processing techniques.
+---
+
+## 🧠 Overview
+
+This project explores a more **context-aware** approach to spam detection. Instead of using TF-IDF or Bag-of-Words, it leverages **semantic word embeddings from Google’s Word2Vec model**, combined with a **Random Forest algorithm** to classify emails.
 
 ---
 
 ## 🚀 Features
-- Text preprocessing (stopwords removal, stemming)
-- TF-IDF vectorization
-- Naive Bayes classifier
-- Accuracy & performance evaluation
 
----
-
-## 📊 Demo Screenshot
-![Prediction Screenshot](images/prediction_ui.png)
+- Implemented in a single Jupyter Notebook
+- NLP-based text preprocessing
+- Google Word2Vec (pre-trained) for word embeddings
+- Vector averaging to represent entire emails
+- Random Forest Classifier for prediction
+- Evaluation metrics like accuracy, precision, recall, and F1-score
 
 ---
 
 ## 🛠️ Technologies Used
-- Python
-- Scikit-learn
-- Pandas
-- Streamlit (for UI, if applicable)
+
+- Python 3.x
+- Jupyter Notebook
+- NLTK (text cleaning, stopword removal)
+- Gensim (Word2Vec model loading)
+- Scikit-learn (RandomForestClassifier & evaluation)
 
 ---
 
-## 🧠 How It Works
-1. Preprocess the email text.
-2. Vectorize the input using TF-IDF.
-3. Predict with trained model.
-4. Return label: **Spam** or **Not Spam**.
+## 🔁 Workflow
+
+1. **Text Preprocessing**
+   - Lowercase conversion
+   - Tokenization
+   - Stopword removal
+2. **Embedding**
+   - Load Google's `GoogleNews-vectors-negative300` Word2Vec model
+   - Convert each email into a 300-d vector by averaging word vectors
+3. **Classification**
+   - Train a **Random Forest classifier**
+   - Use cross-validation & metrics to evaluate performance
+4. **Prediction**
+   - Input: Raw email text  
+   - Output: **Spam** or **Not Spam**
 
 ---
-
-## 📎 Sample Usage
-```python
-predict_spam("Congratulations! You've won a free iPhone.")
