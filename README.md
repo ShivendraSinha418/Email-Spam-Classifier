@@ -4,6 +4,9 @@ A machine learning project that classifies emails as **Spam** or **Not Spam** us
 
 ---
 
+![Banner](drowsy_driver_banner.png)
+
+---
 ## 🧠 Overview
 
 This project explores a more **context-aware** approach to spam detection. Instead of using TF-IDF or Bag-of-Words, it leverages **semantic word embeddings from Google’s Word2Vec model**, combined with a **Random Forest algorithm** to classify emails.
